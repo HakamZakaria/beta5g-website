@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beta5G — Protecting a Factory from Cyberattacks Using Artificial Intelligence. University of Mosul.">
+  <meta name="theme-color" content="#07111f">
+  <title>Beta5G | AI-Powered Factory Cybersecurity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="brand"><span class="brand-mark">β</span><span>Beta5G</span></div>
+  <nav>
+    <a href="#project" data-en="Project" data-ar="المشروع">Project</a>
+    <a href="#architecture" data-en="Architecture" data-ar="المعمارية">Architecture</a>
+    <a href="#ai" data-en="AI" data-ar="الذكاء الاصطناعي">AI</a>
+    <a href="#results" data-en="Results" data-ar="النتائج">Results</a>
+    <a href="#demo" data-en="Demo" data-ar="العرض">Demo</a>
+    <a href="#team" data-en="Team" data-ar="الفريق">Team</a>
+  </nav>
+  <button id="langBtn" class="lang">العربية</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">UNIVERSITY OF MOSUL · COMPUTER SCIENCE & MATHEMATICS</div>
+    <h1>Protecting a Factory from <span>Cyberattacks</span> Using Artificial Intelligence</h1>
+    <p class="lead" data-en="A distributed, real-time intrusion detection system for smart factories using Fog–Cloud computing, machine learning and explainable AI."
+       data-ar="نظام موزع وآني لكشف التسلل في المصانع الذكية باستخدام الحوسبة الضبابية والسحابية وتعلم الآلة والذكاء الاصطناعي القابل للتفسير.">
+       A distributed, real-time intrusion detection system for smart factories using Fog–Cloud computing, machine learning and explainable AI.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#project" data-en="Explore Beta5G" data-ar="استكشف Beta5G">Explore Beta5G</a>
+      <a class="btn ghost" href="assets/Beta5G_Research_Paper.pdf" target="_blank" data-en="Research Paper" data-ar="الورقة البحثية">Research Paper</a>
+    </div>
+    <div class="trust">Beta5G · University of Mosul · Smart Factory Security</div>
+  </div>
+  <div class="hero-visual">
+    <div class="orb"></div>
+    <div class="terminal">
+      <div class="term-head"><span></span><span></span><span></span><b>beta5g-security</b></div>
+      <div class="term-body">
+        <p><i>$</i> traffic_scan --live</p>
+        <p class="ok">✓ Fog filter online</p>
+        <p class="ok">✓ Decision Tree v3 loaded</p>
+        <p class="ok">✓ Isolation Forest loaded</p>
+        <p class="warn">! suspicious packet → Cloud</p>
+        <p class="ok">✓ XGBoost classification complete</p>
+        <p class="ok">✓ SHAP explanation generated</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project" class="section">
+  <div class="section-head">
+    <span>01</span><h2 data-en="The Project" data-ar="المشروع">The Project</h2>
+  </div>
+  <div class="grid two">
+    <div>
+      <p class="big" data-en="Beta5G proposes a deployable and explainable IDS designed for smart-factory environments."
+         data-ar="يقترح Beta5G نظام كشف تسلل قابلًا للنشر وقابلًا للتفسير، مصممًا لبيئات المصانع الذكية.">
+        Beta5G proposes a deployable and explainable IDS designed for smart-factory environments.
+      </p>
+      <p data-en="The system moves lightweight detection close to the network source at the Fog layer and delegates deeper analysis to the Cloud. This reduces unnecessary traffic forwarding while preserving advanced classification and explainability."
+         data-ar="ينقل النظام عملية الكشف الخفيفة إلى طبقة الـFog القريبة من مصدر الشبكة، ويُحيل التحليل المتقدم إلى طبقة الـCloud، مما يقلل نقل البيانات غير الضروري مع الحفاظ على التصنيف المتقدم وقابلية تفسير القرار.">
+        The system moves lightweight detection close to the network source at the Fog layer and delegates deeper analysis to the Cloud. This reduces unnecessary traffic forwarding while preserving advanced classification and explainability.
+      </p>
+    </div>
+    <div class="feature-card">
+      <div class="feature"><b>Fog</b><span>Fast local filtering</span></div>
+      <div class="feature"><b>Cloud</b><span>Deep multi-class analysis</span></div>
+      <div class="feature"><b>SHAP</b><span>Explainable decisions</span></div>
+      <div class="feature"><b>Dashboard</b><span>Role-based monitoring</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="architecture" class="section dark-section">
+  <div class="section-head"><span>02</span><h2 data-en="System Architecture" data-ar="معمارية النظام">System Architecture</h2></div>
+  <div class="flow">
+    <div class="node"><strong>Simulator</strong><small>Network traffic</small></div>
+    <div class="arrow">→</div>
+    <div class="node active"><strong>Fog</strong><small>DT v3 + Isolation Forest</small></div>
+    <div class="arrow">→</div>
+    <div class="node active"><strong>Cloud</strong><small>XGBoost + SHAP</small></div>
+    <div class="arrow">→</div>
+    <div class="node"><strong>Dashboard</strong><small>Technical + Observer</small></div>
+  </div>
+  <div class="architecture-note" data-en="Five containerised services communicate over an isolated Docker bridge network. Suspicious traffic is escalated from Fog to Cloud for classification and explanation."
+       data-ar="تعمل الخدمات ضمن حاويات Docker وتتواصل عبر شبكة معزولة. تُحال الحركة المشبوهة من الـFog إلى الـCloud للتصنيف والتفسير.">
+    Five containerised services communicate over an isolated Docker bridge network. Suspicious traffic is escalated from Fog to Cloud for classification and explanation.
+  </div>
+</section>
+
+<section id="ai" class="section">
+  <div class="section-head"><span>03</span><h2 data-en="AI & Cybersecurity" data-ar="الذكاء الاصطناعي والأمن السيبراني">AI & Cybersecurity</h2></div>
+  <div class="cards">
+    <article><div class="icon">DT</div><h3>Decision Tree v3</h3><p>Fog binary filter optimized for high recall.</p></article>
+    <article><div class="icon">IF</div><h3>Isolation Forest</h3><p>Unsupervised anomaly detection trained on normal traffic.</p></article>
+    <article><div class="icon">XG</div><h3>XGBoost</h3><p>Cloud multi-class classification across nine attack categories.</p></article>
+    <article><div class="icon">SH</div><h3>SHAP</h3><p>Per-feature explanations for security decisions.</p></article>
+    <article><div class="icon">SM</div><h3>SMOTE</h3><p>Minority-class oversampling for imbalanced data.</p></article>
+    <article><div class="icon">AD</div><h3>Adversarial Augmentation</h3><p>Noise, slowdown and padding perturbations used during training.</p></article>
+  </div>
+</section>
+
+<section id="results" class="section metrics-section">
+  <div class="section-head"><span>04</span><h2 data-en="Results" data-ar="النتائج">Results</h2></div>
+  <div class="metrics">
+    <div class="metric"><strong>99.89%</strong><span>Fog Recall · DT v3</span></div>
+    <div class="metric"><strong>76.15%</strong><span>Cloud Accuracy · XGBoost v3</span></div>
+    <div class="metric"><strong>97.7%</strong><span>Live Stress Detection</span></div>
+    <div class="metric"><strong>480</strong><span>Mixed packets tested</span></div>
+  </div>
+  <p class="source-note" data-en="Reported results from the Beta5G research paper. The live stress test detected 469 of 480 mixed packets."
+     data-ar="النتائج أعلاه مأخوذة من الورقة البحثية لـBeta5G. في اختبار الضغط الحي تم اكتشاف 469 حزمة من أصل 480.">
+    Reported results from the Beta5G research paper. The live stress test detected 469 of 480 mixed packets.
+  </p>
+</section>
+
+<section class="section gallery">
+  <div class="section-head"><span>05</span><h2 data-en="Inside the System" data-ar="من داخل النظام">Inside the System</h2></div>
+  <div class="gallery-grid">
+    <figure><img src="assets/dashboard-overview.png" alt="Beta5G dashboard"><figcaption>Technical Dashboard</figcaption></figure>
+    <figure><img src="assets/shap-forensics.png" alt="SHAP forensics"><figcaption>SHAP Forensics</figcaption></figure>
+    <figure><img src="assets/architecture-and-impact.png" alt="System architecture and impact"><figcaption>Deployment & Impact</figcaption></figure>
+  </div>
+</section>
+
+<section id="demo" class="section demo">
+  <div class="section-head"><span>06</span><h2 data-en="Project Demo" data-ar="عرض المشروع">Project Demo</h2></div>
+  <div class="video-wrap">
+    <video controls preload="metadata" poster="assets/dashboard-overview.png">
+      <source src="assets/beta5g-demo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="video-caption">
+      <strong data-en="Beta5G Project Demo" data-ar="العرض الرسمي لمشروع Beta5G">Beta5G Project Demo</strong>
+      <span data-en="2:25 · Project demonstration" data-ar="2:25 · عرض توضيحي للمشروع">2:25 · Project demonstration</span>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="section">
+  <div class="section-head"><span>07</span><h2 data-en="Team & Supervision" data-ar="الفريق والإشراف">Team & Supervision</h2></div>
+  <div class="team-intro">
+    <h3>Beta5G · University of Mosul</h3>
+    <p data-en="A student research team working at the intersection of networking, cybersecurity and artificial intelligence."
+       data-ar="فريق بحثي طلابي يعمل عند تقاطع الشبكات والأمن السيبراني والذكاء الاصطناعي.">
+      A student research team working at the intersection of networking, cybersecurity and artificial intelligence.
+    </p>
+    <div class="supervisor">Supervisor · <b>Dr. Mohammed Zaki</b></div>
+  </div>
+  <div class="team-grid">
+    <div class="person"><span>SUPERVISOR</span><b>Dr. Mohammed Zaki</b><small data-en="Academic Supervisor" data-ar="المشرف الأكاديمي">Academic Supervisor</small></div>
+    <div class="person"><span>TEAM LEADER</span><b>Hassan Hussein</b><small data-en="Team Leader" data-ar="قائد الفريق">Team Leader</small></div>
+    <div class="person"><span>RESEARCH</span><b>Hakam Zakaria</b><small data-en="Research & Paper Writing" data-ar="البحث العلمي وكتابة الورقة البحثية">Research & Paper Writing</small></div>
+    <div class="person"><span>PROGRAMMER</span><b>Amer Muneeb</b><small data-en="Programming & System Development" data-ar="البرمجة وتطوير النظام">Programming & System Development</small></div>
+    <div class="person"><span>AI / CONTROL</span><b>Mohammed Taha</b><small data-en="AI & Control" data-ar="الذكاء الاصطناعي والتحكم">AI & Control</small></div>
+    <div class="person"><span>DESIGNER</span><b>Israa Rayan</b><small data-en="Design" data-ar="التصميم">Design</small></div>
+  </div>
+</section>
+
+<section class="section future dark-section">
+  <div class="section-head"><span>08</span><h2 data-en="Future Development" data-ar="التطوير المستقبلي">Future Development</h2></div>
+  <div class="future-list">
+    <span>TON_IoT</span><span>SWaT</span><span>WebSocket Streaming</span><span>Raspberry Pi Edge</span>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Beta5G</h2>
+  <p data-en="Protecting the factory with artificial intelligence." data-ar="نحمي المصنع بالذكاء الاصطناعي.">Protecting the factory with artificial intelligence.</p>
+  <div class="hero-actions">
+    <a class="btn primary" href="assets/Beta5G_Research_Paper.pdf" target="_blank" data-en="Open Research Paper" data-ar="فتح الورقة البحثية">Open Research Paper</a>
+    <a class="btn ghost" href="#top" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <b>Beta5G</b> · University of Mosul · Protecting a Factory from Cyberattacks Using Artificial Intelligence
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
