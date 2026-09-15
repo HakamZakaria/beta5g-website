@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Beta5G QR Generator</title>
+<style>body{font-family:Arial,sans-serif;background:#07111f;color:#eef;padding:40px;max-width:700px;margin:auto}input,button{padding:14px;border-radius:10px;border:1px solid #345;background:#0d1c2e;color:#fff;margin:6px 0;width:100%}button{cursor:pointer;background:#39d9ff;color:#00131b;font-weight:700}#qr{background:#fff;padding:15px;width:max-content;margin:25px auto}</style>
+</head><body><h1>Beta5G QR Generator</h1><p>Enter the final public website URL. The QR code should point to the website, not directly to the PDF.</p>
+<input id="url" placeholder="https://..." /><button onclick="makeQR()">Generate QR</button><div id="qr"></div>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>function makeQR(){const u=document.getElementById('url').value.trim();const q=document.getElementById('qr');q.innerHTML='';if(!u)return;new QRCode(q,{text:u,width:260,height:260});}</script></body></html>
