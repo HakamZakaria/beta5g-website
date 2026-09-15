@@ -310,6 +310,8 @@ const translations = {
   "AUDIO": "صوت",
   "VIDEO": "فيديو",
   "Project source": "مصدر المشروع",
+  "Official project repository.": "المستودع الرسمي للمشروع.",
+  "VIEW SOURCE ON GITHUB": "عرض المصدر على GitHub",
   "localStorage": "localStorage",
   "Language selector": "اختيار اللغة",
   "Detection process": "عملية الكشف",
