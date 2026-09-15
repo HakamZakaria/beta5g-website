@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06131c"/>
+      <stop offset="100%" stop-color="#0d2238"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#68d7ff"/>
+      <stop offset="100%" stop-color="#3f79ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#68d7ff" fill="none">
+    <path d="M60 160 L220 160 L420 360 L540 360 L700 160 L980 160 L1160 340 L1160 560 L60 560 Z"/>
+    <path d="M200 80 L350 80 L540 240 L760 240 L980 80 L1150 80"/>
+  </g>
+  <rect x="90" y="100" width="1100" height="520" rx="30" fill="rgba(11,25,36,0.72)" stroke="rgba(104,215,255,0.25)"/>
+  <circle cx="330" cy="250" r="7" fill="#68d7ff"/><circle cx="520" cy="250" r="7" fill="#68d7ff"/><circle cx="700" cy="250" r="7" fill="#68d7ff"/><circle cx="880" cy="250" r="7" fill="#68d7ff"/>
+  <path d="M330 250 L520 250 L700 250 L880 250" stroke="url(#cyan)" stroke-width="2" fill="none"/>
+  <rect x="300" y="310" width="190" height="120" rx="20" fill="rgba(15,35,46,0.9)" stroke="rgba(104,215,255,0.25)"/>
+  <rect x="545" y="300" width="210" height="135" rx="20" fill="rgba(15,35,46,0.9)" stroke="rgba(104,215,255,0.25)"/>
+  <rect x="800" y="310" width="220" height="120" rx="20" fill="rgba(15,35,46,0.9)" stroke="rgba(104,215,255,0.25)"/>
+  <text x="90" y="80" font-size="26" font-family="Arial, sans-serif" fill="#68d7ff" letter-spacing="3">BETA5G</text>
+  <text x="120" y="560" font-size="34" font-family="Arial, sans-serif" fill="#EAF7FF">Protecting a Factory from Cyberattacks Using Artificial Intelligence</text>
+  <text x="120" y="610" font-size="20" font-family="Arial, sans-serif" fill="#9EBED5">University of Mosul ? College of Computer Science and Mathematics</text>
+</svg>

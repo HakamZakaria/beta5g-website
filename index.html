@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beta5G is a distributed, real-time intrusion detection system for smart factories focused on protecting industrial environments from cyberattacks using artificial intelligence." />
+    <meta name="theme-color" content="#07141d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Beta5G — Protecting a Factory from Cyberattacks Using Artificial Intelligence" />
+    <meta property="og:description" content="Beta5G is a distributed, real-time intrusion detection system for smart factories focused on protecting industrial environments from cyberattacks using artificial intelligence." />
+    <meta property="og:image" content="assets/images/beta5g-poster.svg" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Beta5G — Protecting a Factory from Cyberattacks Using Artificial Intelligence</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home" class="brand" aria-label="Beta5G home">Beta5G</a>
+          <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-nav-list" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="site-nav-list" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#system-overview">System</a></li>
+            <li><a href="#ai-engine">AI</a></li>
+            <li><a href="#model-performance">Results</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#research-demo">Research</a></li>
+            <li><a href="#contact-opportunities">Contact</a></li>
+          </ul>
+          <div class="language-switcher" role="group" aria-label="Language selector">
+            <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+            <span aria-hidden="true">|</span>
+            <button type="button" class="language-button" data-language="ar" aria-pressed="false">AR</button>
+          </div>
+          <a href="#contact-opportunities" class="button button-primary nav-cta">Get Involved</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section id="hero" class="section hero-section">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="section-label">Industrial Cybersecurity · AI Research</p>
+            <h1>Protecting a Factory from Cyberattacks Using Artificial Intelligence</h1>
+            <p class="lead">A distributed, real-time intrusion detection system for smart factories that combines local Fog-based filtering with Cloud-based multi-class classification and explainable AI.</p>
+
+            <div class="hero-pipeline" aria-label="Detection process">
+              <span>DETECT</span>
+              <span class="pipeline-arrow">→</span>
+              <span>CLASSIFY</span>
+              <span class="pipeline-arrow">→</span>
+              <span>EXPLAIN</span>
+            </div>
+
+            <div class="hero-pipeline-labels" aria-label="Process labels">
+              <span>Fog Filtering</span>
+              <span>Cloud Classification</span>
+              <span>SHAP Explainability</span>
+            </div>
+
+            <div class="cta-group">
+              <a href="#live-test" class="button button-primary">Explore the System</a>
+              <a href="#research-demo" class="button button-secondary">Watch Demo</a>
+            </div>
+
+            <div class="hero-status" aria-label="Technical system status">
+              <div class="status-block">
+                <span class="status-label">System</span>
+                <strong>BETA5G IDS</strong>
+              </div>
+              <div class="status-block">
+                <span class="status-label">Architecture</span>
+                <strong>FOG → CLOUD → DASHBOARD</strong>
+              </div>
+              <div class="status-block">
+                <span class="status-label">AI</span>
+                <strong>DT v3 · Isolation Forest · XGBoost · SHAP</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Beta5G system preview">
+            <div class="visual-header">
+              <span class="visual-title">BETA5G SYSTEM</span>
+              <span class="visual-state"><i></i>STATUS: MONITORING</span>
+            </div>
+
+            <div class="hero-flow">
+              <div class="flow-node factory-node">
+                <span class="node-kicker">FACTORY / OT</span>
+                <strong>OT NETWORK</strong>
+                <div class="mini-tags">
+                  <span>PLC</span>
+                  <span>SENSOR</span>
+                  <span>CAMERA</span>
+                  <span>HMI</span>
+                </div>
+              </div>
+
+              <div class="flow-connector" aria-hidden="true">↓</div>
+
+              <div class="flow-node traffic-node">
+                <span class="node-kicker">DATA PATH</span>
+                <strong>TRAFFIC SIMULATOR</strong>
+              </div>
+
+              <div class="flow-connector" aria-hidden="true">↓</div>
+
+              <div class="flow-node fog-node">
+                <span class="node-kicker">FOG NODE</span>
+                <strong>DT v3</strong>
+                <small>Isolation Forest</small>
+              </div>
+
+              <div class="flow-connector" aria-hidden="true">↓</div>
+
+              <div class="flow-node cloud-node">
+                <span class="node-kicker">CLOUD</span>
+                <strong>XGBoost</strong>
+              </div>
+
+              <div class="flow-connector" aria-hidden="true">↓</div>
+
+              <div class="flow-node xai-node">
+                <span class="node-kicker">XAI</span>
+                <strong>SHAP</strong>
+              </div>
+
+              <div class="flow-connector" aria-hidden="true">↓</div>
+
+              <div class="flow-node dashboard-node">
+                <span class="node-kicker">DASHBOARD</span>
+                <strong>ANALYST VIEW</strong>
+              </div>
+            </div>
+
+            <div class="hero-ui-strip" aria-label="System indicators">
+              <span><i class="status-dot"></i>TRAFFIC: ACTIVE</span>
+              <span><i class="status-dot"></i>FOG NODE: ONLINE</span>
+              <span><i class="status-dot"></i>CLOUD: READY</span>
+              <span><i class="status-dot"></i>XAI: READY</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="system-overview" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">02 / SYSTEM OVERVIEW</p>
+            <h2>One System. Three Operational Layers.</h2>
+            <p class="lead">Beta5G connects the factory traffic path to local Fog filtering, deeper Cloud classification, and a technical Dashboard view.</p>
+          </div>
+          <div class="overview-strip" aria-label="Beta5G system overview">
+            <div><span>01</span><strong>FACTORY / OT</strong><small>Industrial traffic</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>02</span><strong>TRAFFIC SIMULATOR</strong><small>Generated records</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>03</span><strong>FOG NODE</strong><small>Local filtering</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>04</span><strong>CLOUD</strong><small>Deep classification</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>05</span><strong>DASHBOARD</strong><small>Security visibility</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="factory" class="section">
+        <div class="container">
+          <div class="factory-layout">
+            <div class="factory-copy">
+              <p class="section-label">03 / THE FACTORY</p>
+              <h2>Inside the Connected Factory</h2>
+              <p class="lead">Smart factories combine operational technology and information technology, creating heterogeneous environments where industrial devices continuously exchange network traffic.</p>
+            </div>
+
+            <div class="factory-visual" aria-label="Industrial control environment">
+              <aside class="factory-annotation" aria-label="Industrial technology convergence">
+                <span class="annotation-kicker">OT + IT CONVERGENCE</span>
+                <p>Industrial systems increasingly combine operational technology with information technology.</p>
+              </aside>
+
+              <div class="factory-scene" aria-label="Factory network diagram">
+                <div class="factory-device-row">
+                  <div class="factory-device plc">
+                    <span class="device-label">PLC</span>
+                  </div>
+                  <div class="factory-device sensor">
+                    <span class="device-label">Sensors</span>
+                  </div>
+                  <div class="factory-device camera">
+                    <span class="device-label">Cameras</span>
+                  </div>
+                </div>
+
+                <div class="factory-hmi-wrap">
+                  <div class="factory-device hmi">
+                    <span class="device-label">HMI</span>
+                  </div>
+                </div>
+
+                <div class="factory-device industrial">
+                  <span class="device-label">Industrial Devices</span>
+                </div>
+
+                <div class="factory-network" aria-label="Industrial network">
+                  <span class="network-label">Industrial Network</span>
+                </div>
+
+                <div class="factory-traffic" aria-hidden="true">
+                  <span class="packet-chip packet-chip--packet">PACKET</span>
+                  <span class="packet-chip packet-chip--flow">FLOW</span>
+                  <span class="packet-chip packet-chip--tcp">TCP</span>
+                  <span class="packet-chip packet-chip--http">HTTP</span>
+                </div>
+
+                <div class="factory-security" aria-label="Security monitoring status">
+                  <span class="security-tag">SECURITY</span>
+                </div>
+              </div>
+
+              <div class="protocol-strip" aria-label="Industrial protocol channels">
+                <span>Modbus/TCP</span>
+                <span>MQTT</span>
+                <span>RTSP</span>
+                <span>HTTP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="section">
+        <div class="container">
+          <div class="problem-layout">
+            <div class="problem-intro">
+              <p class="section-label">04 / THE PROBLEM</p>
+              <h2>Why Traditional Detection Falls Short</h2>
+              <p class="lead">Modern smart factories require security decisions in real time, but conventional IDS approaches create a gap between detection, explanation, and industrial context.</p>
+              <div class="detection-gap" aria-label="The detection gap">
+                <span class="gap-kicker">ANALYTICAL FRAME</span>
+                <strong>THE DETECTION GAP</strong>
+                <span class="gap-rule"></span>
+                <small>Four independent challenges shape the research problem.</small>
+              </div>
+            </div>
+
+            <div class="problem-list">
+              <article class="problem-entry problem-entry--latency">
+                <div class="problem-entry-marker"><span>01</span></div>
+                <div class="problem-entry-content">
+                  <p class="problem-kicker">CLOUD-CENTRIC DETECTION</p>
+                  <h3>Cloud-Centric Detection</h3>
+                  <p>Processing traffic primarily through the cloud can introduce latency that is incompatible with real-time OT requirements.</p>
+                </div>
+                <div class="problem-cue cue-latency" aria-hidden="true">
+                  <span class="cue-packet"></span><span class="cue-line"></span><span class="cue-cloud">CLOUD</span>
+                </div>
+              </article>
+
+              <article class="problem-entry problem-entry--explanation">
+                <div class="problem-entry-marker"><span>02</span></div>
+                <div class="problem-entry-content">
+                  <p class="problem-kicker">BLACK-BOX DECISIONS</p>
+                  <h3>Black-Box Decisions</h3>
+                  <p>A detection result alone is not enough for a security operator. Black-box models provide no actionable explanation for why a packet was classified as an attack.</p>
+                </div>
+                <div class="problem-cue cue-opaque" aria-hidden="true">
+                  <span class="cue-result">RESULT</span><span class="cue-block">?</span>
+                </div>
+              </article>
+
+              <article class="problem-entry problem-entry--context">
+                <div class="problem-entry-marker"><span>03</span></div>
+                <div class="problem-entry-content">
+                  <p class="problem-kicker">IT DATA &ne; INDUSTRIAL CONTEXT</p>
+                  <h3>IT-Oriented Benchmarks</h3>
+                  <p>Many intrusion-detection benchmarks are based on IT-oriented traffic and do not fully represent industrial protocol characteristics.</p>
+                </div>
+                <div class="problem-cue cue-context" aria-hidden="true">
+                  <span>IT DATA</span><i>&ne;</i><span>OT CONTEXT</span>
+                </div>
+              </article>
+
+              <article class="problem-entry problem-entry--rare">
+                <div class="problem-entry-marker"><span>04</span></div>
+                <div class="problem-entry-content">
+                  <p class="problem-kicker">RARE ATTACK CLASSES</p>
+                  <h3>Rare Attack Classes</h3>
+                  <p>Severe class imbalance can make rare but critical attacks difficult to detect reliably.</p>
+                </div>
+                <div class="rare-classes-visual" aria-label="UNSW-NB15 rare classes are less than 0.05 percent">
+                  <span class="rare-dataset">UNSW-NB15</span>
+                  <span class="rare-label">Worms + Shellcode</span>
+                  <strong>&lt; 0.05%</strong>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beta5g-solution" class="section">
+        <div class="container">
+          <div class="solution-v2-header">
+            <p class="section-label">05 / THE SOLUTION</p>
+            <h2>From Detection to Explanation</h2>
+            <p class="lead">Beta5G separates fast local traffic filtering from deeper cloud-based attack classification and explainability.</p>
+          </div>
+
+          <div class="solution-v2-architecture" aria-label="Beta5G three-tier architecture: Fog → Cloud → Dashboard">
+            <div class="solution-v2-flow">
+              <article class="solution-v2-node solution-v2-simulator">
+                <div class="solution-v2-node-head"><span class="solution-v2-index">01</span><span class="solution-v2-port">HTTP POST</span></div>
+                <p class="solution-v2-kicker">TRAFFIC GENERATION</p>
+                <h3>SIMULATOR</h3>
+                <p>Generates synthetic network records every 0.5 seconds.</p>
+                <div class="solution-v2-meta"><span>15% attack probability</span><span>attacks.json · devices.json</span></div>
+              </article>
+
+              <div class="solution-v2-connector"><span>HTTP POST</span></div>
+
+              <article class="solution-v2-node solution-v2-fog">
+                <div class="solution-v2-node-head"><span class="solution-v2-index">02</span><span class="solution-v2-port">PORT 5001</span></div>
+                <p class="solution-v2-kicker">LOCAL FILTERING</p>
+                <h3>FOG <small>· LOCAL FILTER</small></h3>
+                <div class="fog-models"><span>Decision Tree v3</span><span>Isolation Forest</span></div>
+                <div class="fog-logic"><span>NORMAL vs SUSPICIOUS</span><i>OR</i><strong>ESCALATE</strong></div>
+                <p class="solution-v2-note">Either model flag escalates the packet to Cloud.</p>
+              </article>
+
+              <div class="solution-v2-connector solution-v2-connector--escalate"><span>SUSPICIOUS</span></div>
+
+              <article class="solution-v2-node solution-v2-cloud">
+                <div class="solution-v2-node-head"><span class="solution-v2-index">03</span><span class="solution-v2-port">PORT 5002</span></div>
+                <p class="solution-v2-kicker">DEEP CLASSIFICATION</p>
+                <h3>CLOUD <small>· DEEP ANALYSIS</small></h3>
+                <div class="cloud-model">XGBoost <span>300 estimators · max_depth = 8</span></div>
+                <div class="cloud-sequence"><span>ESCALATED PACKET</span><b>→</b><span>ATTACK TYPE</span><b>→</b><span>SHAP</span></div>
+                <p class="solution-v2-note">Multi-class classification across 9 attack categories.</p>
+              </article>
+
+              <div class="solution-v2-connector"><span>EXPLANATION</span></div>
+
+              <article class="solution-v2-node solution-v2-dashboard">
+                <div class="solution-v2-node-head"><span class="solution-v2-index">04</span><span class="solution-v2-port">PORT 5003</span></div>
+                <p class="solution-v2-kicker">TECHNICAL MONITORING</p>
+                <h3>DASHBOARD</h3>
+                <p>Primary real-time monitoring interface for technical managers.</p>
+                <div class="solution-v2-meta"><span>System information</span><span>Incident analysis</span></div>
+              </article>
+            </div>
+
+            <aside class="solution-v2-monitor">
+              <div class="solution-v2-node-head"><span class="solution-v2-index">05</span><span class="solution-v2-port">PORT 5004</span></div>
+              <p class="solution-v2-kicker">OBSERVER INTERFACE</p>
+              <h3>MONITOR</h3>
+              <p>Simplified bilingual Arabic/English interface for floor supervisors and shift managers.</p>
+              <span class="monitor-link">ASSOCIATED MONITORING LAYER</span>
+            </aside>
+          </div>
+
+          <div class="solution-v2-principles">
+            <p class="solution-v2-kicker">THE KEY DESIGN IDEA</p>
+            <div class="solution-v2-principle-grid">
+              <div><strong>LOCAL</strong><span>Fog handles lightweight binary filtering close to the traffic.</span></div>
+              <div><strong>DEEP</strong><span>Cloud performs multi-class classification on escalated traffic.</span></div>
+              <div><strong>EXPLAINABLE</strong><span>SHAP provides human-interpretable explanations.</span></div>
+            </div>
+          </div>
+
+          <div class="solution-v2-network-meta"><span>DOCKER COMPOSE</span><span>factory_network</span><span>HTTP COMMUNICATION</span></div>
+        </div>
+      </section>
+
+      <section id="ai-engine" class="section">
+        <div class="container">
+          <div class="ai-v2-header">
+            <p class="section-label">06 / AI ENGINE</p>
+            <h2>Three Models. Two Decisions. One Explainable Pipeline.</h2>
+            <p class="lead">Beta5G separates lightweight local detection from deeper multi-class analysis, using SHAP to make the final decision interpretable to security operators.</p>
+          </div>
+
+          <div class="ai-v2-pipeline" aria-label="AI pipeline from network packet to explanation">
+            <div class="ai-v2-stage ai-v2-packet"><span class="ai-v2-stage-number">00</span><strong>NETWORK PACKET</strong><small>ESCALATED TRAFFIC</small></div>
+            <div class="ai-v2-arrow">↓</div>
+            <div class="ai-v2-stage ai-v2-fog-stage">
+              <div class="ai-v2-stage-label"><span>FOG</span><small>BINARY FILTER</small></div>
+              <div class="ai-v2-model-row"><strong>Decision Tree v3</strong><span>class_weight: attack = 3×</span></div>
+              <div class="ai-v2-model-row"><strong>Isolation Forest</strong><span>trained exclusively on normal traffic</span></div>
+              <div class="ai-v2-or-logic"><span>DT flags</span><b>OR</b><span>IF flags</span><em>→ CLOUD</em></div>
+            </div>
+            <div class="ai-v2-arrow">↓</div>
+            <div class="ai-v2-stage ai-v2-decision"><span class="ai-v2-stage-number">01</span><strong>BINARY DECISION</strong><small>NORMAL vs SUSPICIOUS</small></div>
+            <div class="ai-v2-arrow">↓</div>
+            <div class="ai-v2-stage ai-v2-cloud-stage">
+              <div class="ai-v2-stage-label"><span>CLOUD</span><small>MULTI-CLASS ANALYSIS</small></div>
+              <div class="ai-v2-model-row"><strong>XGBOOST v3</strong><span>300 estimators · max_depth = 8</span></div>
+              <div class="ai-v2-cloud-note">Escalated traffic → 9 attack categories</div>
+            </div>
+            <div class="ai-v2-arrow">↓</div>
+            <div class="ai-v2-stage ai-v2-decision"><span class="ai-v2-stage-number">02</span><strong>MULTI-CLASS DECISION</strong><small>ATTACK TYPE</small></div>
+            <div class="ai-v2-arrow">↓</div>
+            <div class="ai-v2-stage ai-v2-shap-stage"><span class="ai-v2-stage-number">03</span><strong>SHAP</strong><small>EXPLAINABLE AI · TREEEXPLAINER</small><div class="ai-v2-feature-flow"><span>FEATURE CONTRIBUTIONS</span><b>→</b><span>OPERATOR EXPLANATION</span></div></div>
+          </div>
+
+          <div class="ai-v2-annotations">
+            <div class="ai-v2-decision-stages">
+              <div><span>STAGE 01</span><strong>BINARY FILTERING</strong><small>Normal vs. Suspicious</small></div>
+              <div><span>STAGE 02</span><strong>MULTI-CLASS CLASSIFICATION</strong><small>9 attack categories</small></div>
+              <div><span>EXPLANATION</span><strong>SHAP</strong><small>Human-interpretable model decision</small></div>
+            </div>
+            <div class="ai-v2-training-strip"><span>TRAINING HARDENING</span><strong>ADVERSARIAL AUGMENTATION</strong><small>noise ±40% · slowdown ×10 · padding</small><strong>SMOTE</strong><small>minority classes · target ≥ 5,000 samples per class</small></div>
+            <div class="ai-v2-feature-strip"><span>FEATURE SPACE</span><strong>42 RAW FEATURES</strong><b>+</b><strong>8 DERIVED FEATURES</strong><small>bytes_ratio · pkts_ratio · load_ratio · duration_score · pkt_size_diff · jit_ratio · conn_intensity · loss_rate</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-methodology" class="section">
+        <div class="container">
+          <div class="data-v2-header">
+            <p class="section-label">07 / DATA &amp; METHODOLOGY</p>
+            <h2>From Network Flows to Model-Ready Data</h2>
+            <p class="lead">Beta5G uses the UNSW-NB15 dataset and a structured training pipeline combining categorical encoding, feature engineering, adversarial augmentation, and SMOTE oversampling.</p>
+          </div>
+
+          <div class="data-v2-overview">
+            <div class="data-v2-dataset-panel">
+              <div class="data-v2-panel-head"><span>DATASET OVERVIEW</span><strong>UNSW-NB15</strong></div>
+              <div class="data-v2-stats">
+                <div><strong>175,341</strong><span>TRAINING RECORDS</span></div>
+                <div><strong>82,332</strong><span>TESTING RECORDS</span></div>
+                <div><strong>42</strong><span>RAW FEATURES</span></div>
+                <div><strong>9 + NORMAL</strong><span>CLASSES</span></div>
+              </div>
+              <p class="data-v2-caption">Raw network-flow characteristics include duration, byte counts, packet counts, TTL values, TCP flags, and connection-tracking counters.</p>
+            </div>
+
+            <div class="data-v2-features-panel">
+              <p class="data-v2-kicker">FEATURE ENGINEERING</p>
+              <h3>42 raw features + 8 derived features</h3>
+              <p>Eight derived ratio and behavior features were appended to the original feature set. They amplify asymmetric traffic patterns characteristic of DoS and reconnaissance attacks, supported by XGBoost importance scores.</p>
+              <div class="data-v2-feature-list">
+                <code>bytes_ratio</code><code>pkts_ratio</code><code>load_ratio</code><code>duration_score</code><code>pkt_size_diff</code><code>jit_ratio</code><code>conn_intensity</code><code>loss_rate</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-v2-training">
+            <div class="data-v2-training-head"><span>TRAINING PIPELINE</span><small>SEPARATE FROM RUNTIME INFERENCE</small></div>
+            <div class="data-v2-pipeline-steps">
+              <div><b>00</b><strong>UNSW-NB15</strong><span>source records</span></div><i>↓</i>
+              <div><b>01</b><strong>LABEL ENCODING</strong><span>proto · service · state → model-ready representation</span></div><i>↓</i>
+              <div><b>02</b><strong>ADVERSARIAL AUGMENTATION</strong><span>3× attack copies: noise ±40% · slowdown ×10 · padding</span></div><i>↓</i>
+              <div><b>03</b><strong>SMOTE</strong><span>minority classes below 5,000 → ≥ 5,000 samples per class</span></div><i>↓</i>
+              <div><b>04</b><strong>MODEL TRAINING</strong><span>prepared training representation</span></div>
+            </div>
+          </div>
+
+          <div class="data-v2-lower-grid">
+            <div class="data-v2-method-note">
+              <p class="data-v2-kicker">01 / LABEL ENCODING</p>
+              <div class="data-v2-encoding"><span>proto</span><span>service</span><span>state</span><b>↓</b><strong>LabelEncoders</strong><b>↓</b><em>MODEL-READY</em></div>
+              <p>Saved LabelEncoders are reused during inference.</p>
+            </div>
+            <div class="data-v2-method-note data-v2-imbalance">
+              <p class="data-v2-kicker">RARE CLASSES</p>
+              <strong>Worms / Shellcode</strong>
+              <span>Attack sub-types such as Worms and Shellcode: fewer than 0.05% of UNSW-NB15.</span>
+            </div>
+            <div class="data-v2-method-note data-v2-scope">
+              <p class="data-v2-kicker">DATASET SCOPE</p>
+              <span>UNSW-NB15 does not include Modbus- or MQTT-specific attack vectors. Therefore, protocol-level OT attacks rely on anomaly detection rather than supervised classification.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="model-performance" class="section">
+        <div class="container">
+          <div class="results-v2-header">
+            <p class="section-label">08 / MODEL PERFORMANCE</p>
+            <h2>Measured Performance</h2>
+            <p class="lead">The evaluation compares the Fog binary filtering models and Cloud multi-class classifiers across the training versions reported in the research paper.</p>
+          </div>
+
+          <div class="results-v2-table-wrap">
+            <table class="results-v2-table">
+              <caption>Table 1. Measured model performance</caption>
+              <thead><tr><th scope="col">Model</th><th scope="col">Role</th><th scope="col">Accuracy</th><th scope="col">Recall</th></tr></thead>
+              <tbody>
+                <tr class="results-v2-fog"><th scope="row">Decision Tree v1</th><td><span>FOG</span> · binary</td><td>84.45%</td><td>98.31%</td></tr>
+                <tr class="results-v2-fog results-v2-emphasis"><th scope="row">Decision Tree v3</th><td><span>FOG</span> · binary</td><td>81.42%</td><td><strong>99.89%</strong></td></tr>
+                <tr class="results-v2-cloud"><th scope="row">Random Forest</th><td><span>CLOUD</span> · multi</td><td>76.69%</td><td>—</td></tr>
+                <tr class="results-v2-cloud"><th scope="row">XGBoost v3</th><td><span>CLOUD</span> · multi</td><td>76.15%</td><td>—</td></tr>
+                <tr class="results-v2-anomaly"><th scope="row">IsolationForest</th><td><span>FOG</span> · anomaly</td><td>—</td><td>≈62%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="results-v2-highlight-grid">
+            <div class="results-v2-recall-highlight">
+              <p class="results-v2-kicker">FOG PERFORMANCE HIGHLIGHT</p>
+              <h3>Decision Tree v3</h3>
+              <strong>99.89%</strong><span>RECALL</span>
+              <div class="results-v2-miss-flow"><b>45,332</b><span>attacks evaluated</span><i>→</i><b>52</b><span>missed</span><i>→</i><b>0.11%</b><span>FNR</span></div>
+              <p>14× improvement in missed-attack count over DT v1's 765 missed attacks.</p>
+            </div>
+            <div class="results-v2-missed-compare">
+              <p class="results-v2-kicker">MISSED-ATTACK COMPARISON</p>
+              <div><span>DT v1</span><strong>765</strong><small>missed attacks</small></div>
+              <div><span>DT v3</span><strong>52</strong><small>missed attacks</small></div>
+              <em>14× fewer missed attacks</em>
+            </div>
+          </div>
+
+          <div class="results-v2-context-grid">
+            <div class="results-v2-cloud-context">
+              <p class="results-v2-kicker">CLOUD PERFORMANCE</p>
+              <h3>Multi-class attack classification</h3>
+              <div><span>Random Forest</span><strong>76.69% <small>accuracy</small></strong></div>
+              <div><span>XGBoost v3</span><strong>76.15% <small>accuracy</small></strong></div>
+              <p>The Cloud models perform multi-class attack classification; measured XGBoost v3 accuracy is 76.15%.</p>
+            </div>
+            <div class="results-v2-class-context">
+              <p class="results-v2-kicker">XGBOOST V3 · CONFUSION-MATRIX CONTEXT</p>
+              <div><span>Generic</span><strong>18,345</strong><small>correct</small></div>
+              <div><span>Normal</span><strong>28,011</strong><small>correct</small></div>
+              <div><span>Worms</span><strong>24</strong><small>correct</small></div>
+            </div>
+            <div class="results-v2-interpretation">
+              <p class="results-v2-kicker">SCIENTIFIC INTERPRETATION</p>
+              <p>The Fog model prioritizes attack recall to minimize missed attacks before escalation.</p>
+              <p>The Cloud model performs deeper multi-class classification on escalated traffic. These metrics measure different tasks.</p>
+            </div>
+          </div>
+
+          <div class="results-v2-hierarchy"><span>FOG · DT v3 · 99.89% recall</span><i>↓</i><span>CLOUD · XGBoost v3 · 76.15% accuracy</span></div>
+          <p class="results-v2-anomaly-note"><strong>IsolationForest</strong> is the Fog anomaly detector with reported recall ≈62%, not an overall system detection rate.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="live-test" class="section">
+        <div class="container">
+          <div class="live-v2-header">
+            <p class="section-label">09 / LIVE SYSTEM TEST</p>
+            <h2>480 Packets. One Live Stress Test.</h2>
+            <p class="lead">A live stress test evaluated the deployed system under mixed normal and attack traffic, measuring detection and Fog filtering behavior.</p>
+          </div>
+
+          <div class="live-v2-layout">
+            <div class="live-v2-flow" aria-label="Live stress test flow">
+              <div class="live-v2-flow-step"><span>01</span><strong>TRAFFIC IN</strong><b>480</b><small>MIXED PACKETS</small></div>
+              <i>↓</i>
+              <div class="live-v2-flow-step live-v2-fog"><span>02</span><strong>FOG FILTERING</strong><b>LOCAL FILTER</b><small>DEPLOYED SYSTEM STAGE</small></div>
+              <i>↓</i>
+              <div class="live-v2-flow-step live-v2-detected"><span>03</span><strong>DETECTION</strong><b>469</b><small>DETECTED</small></div>
+              <i>↓</i>
+              <div class="live-v2-flow-step live-v2-result"><span>04</span><strong>RESULT</strong><b>97.7%</b><small>DETECTION RATE</small></div>
+            </div>
+
+            <div class="live-v2-evidence">
+              <div><span>TOTAL PACKETS</span><strong>480</strong></div>
+              <div><span>DETECTED</span><strong>469</strong></div>
+              <div><span>NOT DETECTED</span><strong>11</strong><small>derived: 480 − 469</small></div>
+              <div class="live-v2-primary"><span>DETECTION RATE</span><strong>97.7%</strong><small>469 / 480</small></div>
+            </div>
+          </div>
+
+          <div class="live-v2-filter-note">
+            <strong>2.3%</strong><span>FOG FILTER RATE</span>
+            <p>The reported Fog filter rate demonstrates that only a small portion of the mixed traffic was filtered locally while the system maintained a 97.7% detection rate in the live stress test.</p>
+          </div>
+
+          <div class="live-v2-separation">
+            <div><span>MODEL PERFORMANCE</span><strong>DT v3 · 99.89% recall</strong><strong>XGBoost v3 · 76.15% accuracy</strong></div>
+            <b>VERSUS</b>
+            <div><span>LIVE SYSTEM TEST</span><strong>97.7% detection rate</strong></div>
+          </div>
+
+          <div class="live-v2-context-grid">
+            <div><span>RESPONSE CONTEXT</span><strong>SUB-SECOND RESPONSE</strong><small>Reported in the live-system evaluation.</small></div>
+            <div><span>ARCHITECTURE / IMPACT CONTEXT</span><strong>&lt; 200 ms</strong><small>Targeted/achieved deployment latency described for Fog nodes co-located with factory floor switches.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explainable-ai" class="section">
+        <div class="container">
+          <div class="shap-v2-header">
+              <p class="section-label">10 / EXPLAINABLE AI</p>
+              <h2>Why Did the Model Flag It?</h2>
+              <p class="lead">Detection is only the first decision. Beta5G uses SHAP to make the Cloud classification interpretable and auditable.</p>
+            </div>
+
+            <div class="shap-v2-layout">
+              <aside class="shap-v2-queue" aria-label="Incident queue">
+                <div class="shap-v2-panel-head"><span>INCIDENT QUEUE</span><small>FORENSIC WORKSPACE</small></div>
+                <div class="shap-v2-queue-empty"><span class="shap-v2-queue-mark"></span><strong>SELECT AN INCIDENT</strong><small>FOR FORENSIC ANALYSIS</small></div>
+                <div class="shap-v2-queue-note">Static interface context. Incident records are not populated here.</div>
+              </aside>
+
+              <div class="shap-v2-forensics">
+                <div class="shap-v2-panel-head"><span>SHAP FORENSICS</span><small>EXPLAINABLE CLASSIFICATION FOR AUDITABLE INCIDENT ANALYSIS</small></div>
+                <div class="shap-v2-forensics-body">
+                  <div class="shap-v2-classification-path"><span>NETWORK EVENT</span><b>↓</b><span>CLOUD CLASSIFICATION</span><b>↓</b><span>SHAP EXPLANATION</span><b>↓</b><span>ACTIONABLE FORENSICS</span></div>
+                  <div class="shap-v2-metadata">
+                    <p class="shap-v2-kicker">INCIDENT METADATA</p>
+                    <div><span>Incident ID</span><strong>Not populated</strong></div>
+                    <div><span>Source Device</span><strong>Not populated</strong></div>
+                    <div><span>Risk Level</span><strong>Not populated</strong></div>
+                    <div><span>RF Confidence Score</span><strong>Not populated</strong></div>
+                    <div><span>Detection Timestamp</span><strong>Not populated</strong></div>
+                  </div>
+                  <div class="shap-v2-contributions">
+                    <div class="shap-v2-contribution-head"><p class="shap-v2-kicker">FEATURE CONTRIBUTION</p><span>ATTACK <i></i> NORMAL</span></div>
+                    <div class="shap-v2-axis"><span>ATTACK</span><span>CONTRIBUTION DIRECTION ONLY</span><span>NORMAL</span></div>
+                    <div class="shap-v2-bar-row"><span>Feature contribution</span><i class="shap-v2-bar shap-v2-bar-attack"></i></div>
+                    <div class="shap-v2-bar-row"><span>Feature contribution</span><i class="shap-v2-bar shap-v2-bar-normal"></i></div>
+                    <div class="shap-v2-bar-row"><span>Feature contribution</span><i class="shap-v2-bar shap-v2-bar-attack short"></i></div>
+                    <small class="shap-v2-no-values">Abstract directional bars. No SHAP scores or ranking are reported here.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shap-v2-bottom-grid">
+              <div class="shap-v2-interpretation">
+                <p class="shap-v2-kicker">FORENSIC INTERPRETATION</p>
+                <p>SHAP shows how individual features influence the model's classification decision, turning a black-box prediction into an interpretable forensic signal.</p>
+                <div class="shap-v2-steps"><div><b>01</b><strong>CLASSIFY</strong><span>XGBoost performs multi-class attack classification in the Cloud layer.</span></div><div><b>02</b><strong>EXPLAIN</strong><span>SHAP / TreeExplainer decomposes the model decision into feature contributions.</span></div><div><b>03</b><strong>INTERPRET</strong><span>Security personnel can inspect which feature signals pushed the decision toward attack or normal.</span></div></div>
+              </div>
+              <div class="shap-v2-model-context"><p class="shap-v2-kicker">CLOUD MODEL CONTEXT</p><strong>XGBoost v3</strong><span>300 estimators · max_depth = 8</span><span>9 attack categories</span><span>Explanation: SHAP / TreeExplainer</span></div>
+            </div>
+
+            <div class="shap-v2-engineered"><p class="shap-v2-kicker">ENGINEERED FEATURES AVAILABLE TO THE PIPELINE</p><div><code>bytes_ratio</code><code>pkts_ratio</code><code>load_ratio</code><code>duration_score</code><code>pkt_size_diff</code><code>jit_ratio</code><code>conn_intensity</code><code>loss_rate</code></div></div>
+          </div>
+      </section>
+
+      <section id="incident-response" class="section">
+        <div class="container">
+          <div class="response-v2-header">
+            <p class="section-label">11 / INCIDENT RESPONSE</p>
+            <h2>From Detection to Decision.</h2>
+            <p class="lead">Once an incident reaches the Cloud layer and is classified, Beta5G provides a structured interface for security personnel to decide how the incident should be handled.</p>
+          </div>
+
+          <div class="response-v2-flow" aria-label="Incident response decision workflow">
+            <div><span>01</span><strong>FOG DETECTION</strong></div><i>↓</i>
+            <div><span>02</span><strong>CLOUD CLASSIFICATION</strong></div><i>↓</i>
+            <div><span>03</span><strong>SHAP EXPLANATION</strong></div><i>↓</i>
+            <div class="response-v2-decision"><span>04</span><strong>SECURITY DECISION</strong></div>
+          </div>
+
+          <div class="response-v2-manager">
+            <div class="response-v2-manager-head"><span>INCIDENT MANAGER</span><small>REPRESENTATIONAL WORKFLOW INTERFACE</small></div>
+            <div class="response-v2-manager-status"><div><span>DECISION REQUIRED</span><strong>CLASSIFICATION · ATTACK</strong></div><div><span>RESPONSE STATUS</span><strong>AWAITING ACTION</strong></div></div>
+            <p class="response-v2-manager-note">Select the response action that matches the operator's assessment. Actions are shown as decision options, not automated commands.</p>
+            <div class="response-v2-actions">
+              <article><span>01</span><h3>ISOLATE</h3><p>Separate the affected asset from the operational environment when containment is required.</p></article>
+              <article><span>02</span><h3>MONITOR</h3><p>Continue observation when the incident requires additional operational context.</p></article>
+              <article><span>03</span><h3>IGNORE</h3><p>Dismiss the incident when the security operator determines that no further action is required.</p></article>
+              <article><span>04</span><h3>ESCALATE</h3><p>Raise the incident for additional security or operational attention.</p></article>
+            </div>
+          </div>
+
+          <div class="response-v2-context"><p class="response-v2-kicker">RESEARCH CONTEXT</p><p>Beta5G connects detection, classification, explanation, and operator response into a single security workflow.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="industrial-impact" class="section">
+        <div class="container">
+          <div class="impact-v2-header">
+            <p class="section-label">12 / INDUSTRIAL IMPACT</p>
+            <h2>Built for the Reality of the Factory Floor.</h2>
+            <p class="lead">Beta5G is designed for small and medium industrial facilities where detection speed, local processing, explainability, and operational simplicity matter.</p>
+          </div>
+
+          <div class="impact-v2-flow" aria-label="Factory floor to security visibility flow">
+            <div><span>01</span><strong>FACTORY FLOOR</strong></div><i>↓</i><div><span>02</span><strong>LOCAL FOG NODE</strong></div><i>↓</i><div><span>03</span><strong>CLOUD ANALYSIS</strong></div><i>↓</i><div><span>04</span><strong>SECURITY VISIBILITY</strong></div>
+          </div>
+
+          <div class="impact-v2-pillars">
+            <article><span>01</span><h3>LOCAL DETECTION</h3><p>Process network traffic close to the factory floor through Fog-based filtering.</p></article>
+            <article><span>02</span><h3>LOW-LATENCY RESPONSE</h3><strong>&lt; 200 ms</strong><p>Detection latency in the described co-located Fog deployment.</p></article>
+            <article><span>03</span><h3>SCALABLE ARCHITECTURE</h3><p>Add Fog nodes as production lines or monitored areas expand.</p></article>
+            <article><span>04</span><h3>OPERATIONAL VISIBILITY</h3><p>Provide technical and observer-oriented dashboards for different users.</p></article>
+          </div>
+
+          <div class="impact-v2-lower-grid">
+            <div class="impact-v2-why"><p class="impact-v2-kicker">WHY IT MATTERS</p><p>Designed for facilities without a dedicated SOC.</p><p>Keep raw traffic processing close to the operational environment.</p><p>Separate deep AI analysis from local first-stage filtering.</p><p>Give technical and non-technical personnel appropriate visibility.</p></div>
+            <div class="impact-v2-scaling"><p class="impact-v2-kicker">HORIZONTAL FOG SCALING</p><div><span>PRODUCTION LINE 01</span><b>↓</b><strong>FOG NODE</strong></div><div><span>PRODUCTION LINE 02</span><b>↓</b><strong>FOG NODE</strong></div><div><span>PRODUCTION LINE 03</span><b>↓</b><strong>FOG NODE</strong></div><div class="scaling-cloud"><b>↓</b><strong>CLOUD</strong></div></div>
+          </div>
+
+          <div class="impact-v2-locality"><p class="impact-v2-kicker">LOCAL PROCESSING</p><p>First-stage processing occurs locally at the Fog layer; suspicious traffic can then be forwarded to the Cloud for deeper classification.</p><span>Fog filtering keeps the first-stage analysis close to the factory environment, reducing the need to transmit raw traffic off-site.</span></div>
+
+          <div class="impact-v2-visibility"><p class="impact-v2-kicker">USER VISIBILITY</p><div><strong>TECHNICAL VIEW</strong><span>For technical security personnel</span></div><div><strong>OBSERVER VIEW</strong><span>For floor supervisors / shift managers</span></div><small>Bilingual interface</small></div>
+
+          <div class="impact-v2-latency"><strong>&lt; 200 ms</strong><div><span>DESCRIBED DEPLOYMENT LATENCY</span><small>Reported for Fog nodes co-located with factory floor switches.</small></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="limitations-future" class="section">
+        <div class="container">
+          <div class="limits-v2-header">
+            <p class="section-label">13 / LIMITATIONS &amp; FUTURE</p>
+            <h2>Research With Clear Boundaries.</h2>
+            <p class="lead">Beta5G demonstrates a practical Fog–Cloud security architecture, while its current limitations define the next steps for research and deployment.</p>
+          </div>
+
+          <div class="limits-v2-columns">
+            <div class="limits-v2-column limits-v2-current">
+              <div class="limits-v2-column-head"><span>CURRENT LIMITATIONS</span><small>WHAT THE PAPER IDENTIFIES</small></div>
+              <article><span>01</span><div><h3>DATASET SCOPE</h3><p>UNSW-NB15 does not contain Modbus/MQTT-specific attack vectors.</p><small>OT protocol-specific attacks therefore rely on anomaly detection rather than supervised classification.</small></div></article>
+              <article><span>02</span><div><h3>CLASS SIMILARITY</h3><p>XGBoost classification is constrained by similarity between some attack classes.</p><strong>Exploits / Fuzzers</strong></div></article>
+              <article><span>03</span><div><h3>SHAP COMPUTATION OVERHEAD</h3><p>SHAP adds approximately 15–25 ms per alert at the Cloud layer under sustained high-rate attacks.</p></div></article>
+              <article><span>04</span><div><h3>DEPLOYMENT SCALE</h3><p>The current work describes a Docker-based research prototype. Future deployment should evaluate the architecture on constrained edge hardware.</p></div></article>
+            </div>
+
+            <div class="limits-v2-column limits-v2-future">
+              <div class="limits-v2-column-head"><span>WHERE BETA5G GOES NEXT</span><small>FUTURE RESEARCH DIRECTIONS</small></div>
+              <article><span>01</span><div><h3>TON_IoT</h3><p>Evaluate the architecture with the TON_IoT dataset.</p></div></article>
+              <article><span>02</span><div><h3>SWaT</h3><p>Expand evaluation using the SWaT industrial control system dataset.</p></div></article>
+              <article><span>03</span><div><h3>REAL-TIME STREAMING</h3><p>Explore WebSocket-based real-time streaming for live system communication.</p></div></article>
+              <article><span>04</span><div><h3>EDGE DEPLOYMENT</h3><p>Evaluate deployment on Raspberry Pi-class Fog hardware.</p></div></article>
+              <article><span>05</span><div><h3>SHAP OPTIMIZATION</h3><p>BATCHED / ASYNCHRONOUS SHAP</p><small>Future batching or asynchronous handling could reduce queue build-up during sustained high-rate attacks.</small></div></article>
+            </div>
+          </div>
+
+          <div class="limits-v2-roadmap"><p class="limits-v2-kicker">RESEARCH ROADMAP</p><div><span>CURRENT RESEARCH</span><b>↓</b><span>UNSW-NB15</span><b>↓</b><span>BROADER DATASETS</span><b>↓</b><span>TON_IoT · SWaT</span><b>↓</b><span>REAL-TIME STREAMING</span><b>↓</b><span>WebSocket</span><b>↓</b><span>LIGHTWEIGHT FOG DEPLOYMENT</span><b>↓</b><span>Raspberry Pi-class Fog</span><b>↓</b><span>OPTIMIZED EXPLAINABILITY</span><b>↓</b><span>Batched / Async SHAP</span></div></div>
+
+          <div class="limits-v2-closing"><strong>Limitations are not gaps to hide—they define the next experiments.</strong><span>Beta5G is positioned as a research prototype with a clear path toward broader industrial evaluation.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section">
+        <div class="container">
+          <div class="team-v2-header">
+            <p class="section-label">14 / THE TEAM</p>
+            <h2>Built by a Research Team.</h2>
+            <p class="lead">Beta5G brings together research, software engineering, artificial intelligence, systems development, and visual communication.</p>
+          </div>
+
+          <div class="team-v2-supervisor">
+            <p class="team-v2-kicker">ACADEMIC SUPERVISOR</p>
+            <article class="team-card team-v2-featured">
+              <img class="member-photo" src="assets/images/team/mohammed-zaki-hasan.jpeg" alt="Mohammed Zaki Hasan" />
+              <h4>Dr. Mohammed Zaki Hasan</h4>
+              <p class="member-role">ACADEMIC SUPERVISION · Academic Supervisor</p>
+              <p class="member-contribution">Academic supervision and research guidance</p>
+              <p class="member-links">Contact / social links placeholder</p>
+            </article>
+          </div>
+
+          <div class="team-v2-core">
+            <div class="team-v2-core-head"><p class="team-v2-kicker">CORE TEAM</p><span>RESEARCH · ENGINEERING · COMMUNICATION</span></div>
+            <div class="team-v2-grid">
+              <article class="team-card">
+                <img class="member-photo member-photo-hassan" src="assets/images/team/hassan-hussein-naser.jpeg" alt="Hassan Hussein Naser" />
+                <h4>Hassan Hussein Naser</h4>
+                <p class="member-role">TEAM LEADERSHIP · Team Leader</p>
+                <p class="member-contribution">Project coordination and team leadership</p>
+                <p class="member-links">Contact / social links placeholder</p>
+              </article>
+
+              <article class="team-card">
+                <img class="member-photo member-photo-hakam" src="assets/images/team/hakam-zakaria-taha.jpeg" alt="Hakam Zakaria Taha" />
+                <h4>Hakam Zakaria Taha</h4>
+                <p class="member-role">RESEARCH · Research &amp; Research Paper Writing</p>
+                <p class="member-contribution">Research development, technical documentation, and research paper writing</p>
+                <p class="member-links">Contact / social links placeholder</p>
+              </article>
+
+              <article class="team-card">
+                <img class="member-photo" src="assets/images/team/amer-monib-mohammed-taher.jpeg" alt="Amer Monib Mohammed Taher" />
+                <h4>Amer Monib Mohammed Taher</h4>
+                <p class="member-role">SYSTEM DEVELOPMENT · Programmer / System Development</p>
+                <p class="member-contribution">System development and implementation</p>
+                <p class="member-links">Contact / social links placeholder</p>
+              </article>
+
+              <article class="team-card">
+                <img class="member-photo" src="assets/images/team/mohammed-taha-abdullah.jpeg" alt="Mohammed Taha Abdullah" />
+                <h4>Mohammed Taha Abdullah</h4>
+                <p class="member-role">AI / CONTROL · AI / Control</p>
+                <p class="member-contribution">Artificial intelligence and control development</p>
+                <p class="member-links">Contact / social links placeholder</p>
+              </article>
+
+              <article class="team-card">
+                <img class="member-photo member-photo-esraa" src="assets/images/team/esraa-rayan-hamed.jpeg" alt="Esraa Rayan Hamed" />
+                <h4>Esraa Rayan Hamed</h4>
+                <p class="member-role">DESIGN · Designer</p>
+                <p class="member-contribution">Visual design and interface presentation</p>
+                <p class="member-links">Contact / social links placeholder</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-v2-closing"><strong>Different disciplines. One system. One research objective.</strong><span>From research and AI to system development and visual communication, each role contributes to the complete Beta5G prototype.</span></div>
+        </div>
+      </section>
+
+      <section id="research-demo" class="section">
+        <div class="container">
+          <div class="public-v2-header">
+            <p class="section-label">15 / RESEARCH &amp; DEMO</p>
+            <h2>See the Research. Run the Demo.</h2>
+            <p class="lead">Explore the research paper and the system demonstration behind Beta5G.</p>
+          </div>
+
+          <div class="public-v2-resources">
+            <article class="public-v2-paper">
+              <p class="public-v2-kicker">01 / RESEARCH PAPER</p>
+              <h3>Protecting a Factory from Cyberattacks Using Artificial Intelligence</h3>
+              <p>Beta5G presents a distributed Fog–Cloud intrusion detection architecture for smart factories, combining local filtering, Cloud-based classification, and explainable AI.</p>
+              <div class="public-v2-actions"><a class="button button-primary" href="assets/documents/Beta5G_Research_Paper.pdf" target="_blank" rel="noopener">READ RESEARCH</a><a class="button button-secondary" href="assets/documents/Beta5G_Research_Paper.pdf" download>DOWNLOAD PDF</a></div>
+            </article>
+            <article class="public-v2-video">
+              <div class="public-v2-video-head"><p class="public-v2-kicker">02 / SYSTEM DEMO</p><span>WATCH DEMO</span></div>
+              <video controls muted playsinline preload="metadata" aria-label="Beta5G system demonstration video"><source src="assets/video/beta5g-demo.mp4" type="video/mp4" />Your browser does not support HTML5 video.</video>
+              <audio controls preload="metadata" aria-label="Beta5G demonstration audio"><source src="assets/audio/beta5g-demo.mp3" type="audio/mpeg" />Your browser does not support HTML5 audio.</audio>
+            </article>
+            <article class="public-v2-source">
+              <p class="public-v2-kicker">03 / SOURCE / PROJECT</p>
+              <h3>beta5g-website</h3>
+              <p>The project source link will be added when an official repository URL is available.</p>
+              <span class="public-v2-placeholder">GITHUB / PROJECT URL · PLACEHOLDER</span>
+            </article>
+          </div>
+
+          <div class="public-v2-cta"><div><strong>BETA5G</strong><span>Research. Detect. Explain.</span><small>Explore the system and connect with the team.</small></div><div class="public-v2-actions"><a class="button button-primary" href="assets/documents/Beta5G_Research_Paper.pdf" target="_blank" rel="noopener">READ THE PAPER</a><a class="button button-secondary" href="assets/video/beta5g-demo.mp4" target="_blank" rel="noopener">WATCH THE DEMO</a></div></div>
+        </div>
+      </section>
+
+      <section id="contact-opportunities" class="section">
+        <div class="container">
+          <div class="contact-v2-header">
+            <p class="section-label">16 / CONTACT &amp; OPPORTUNITIES</p>
+            <h2>Let&rsquo;s Build What Comes Next.</h2>
+            <p class="lead">Beta5G is open to research collaboration, industrial evaluation, technical opportunities, and future development.</p>
+          </div>
+          <div class="contact-v2-opportunities">
+            <article><span>01</span><h3>RESEARCH COLLABORATION</h3><p>Collaborate on industrial cybersecurity, anomaly detection, Fog–Cloud architectures, and explainable AI.</p></article>
+            <article><span>02</span><h3>INDUSTRIAL PARTNERSHIPS</h3><p>Explore evaluation and research opportunities in real industrial environments.</p></article>
+            <article><span>03</span><h3>INTERNSHIP OPPORTUNITIES</h3><p>Connect with the team around technical training and practical cybersecurity experience.</p></article>
+            <article><span>04</span><h3>TECHNICAL OPPORTUNITIES</h3><p>Discuss software engineering, AI, networking, and industrial cybersecurity opportunities.</p></article>
+            <article><span>05</span><h3>GRADUATE OPPORTUNITIES</h3><p>Open the conversation around future technical and research positions.</p></article>
+          </div>
+          <div class="contact-v2-details">
+            <div class="contact-placeholders">
+              <p><strong>Hakam Zakaria Taha</strong> — <a href="tel:07718197071">07718197071</a> · <a href="tel:07801889968">07801889968</a></p>
+              <p><strong>Hassan Hussein Naser</strong> — <a href="tel:07713513997">07713513997</a></p>
+              <p><strong>Supervisor Mohammed Zaki Hasan</strong> — <a href="tel:07738234379">07738234379</a></p>
+            </div>
+            <p class="contact-v2-note">Contact the team or supervisor directly for project communication.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p class="footer-brand">Beta5G</p>
+          <p>Protecting a Factory from Cyberattacks Using Artificial Intelligence</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#team">Team</a></li>
+          <li><a href="#research-demo">Research</a></li>
+          <li><a href="#contact-opportunities">Contact</a></li>
+        </ul>
+        <p class="copyright">Copyright © Beta5G</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
