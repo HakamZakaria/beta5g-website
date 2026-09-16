@@ -125,6 +125,7 @@ const translations = {
   "SOURCE / PROJECT": "المصدر / المشروع",
   "Explore the research paper and the system demonstration behind Beta5G.": "استكشف البحث العلمي وعرض النظام وراء Beta5G.",
   "Protecting a Factory from Cyberattacks Using Artificial Intelligence": "حماية مصنع من الهجمات السيبرانية باستخدام الذكاء الاصطناعي",
+  "Designed & Developed by hakam zakaria taha": "تصميم وبرمجة: حكم زكريا طه",
   "Let’s Build What Comes Next.": "لنبنِ ما سيأتي تالياً.",
   "RESEARCH COLLABORATION": "التعاون البحثي",
   "INDUSTRIAL PARTNERSHIPS": "الشراكات الصناعية",
